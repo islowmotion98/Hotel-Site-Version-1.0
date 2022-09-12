@@ -1,0 +1,653 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+.owl-dots{
+    display: none;
+}
+/* HEADER */
+.img-logo{
+    display: block;
+    height: 260px;
+    width: 250px;
+}
+.header{
+    height: 22vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6em;
+    position: absolute;
+    top: 0px;
+}
+.header-ul{
+    display: flex;
+}
+.header-ul:nth-child(1) li a{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.header-ul:nth-child(3) li a{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.header-li {
+    list-style-type: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.header-li a{
+    list-style-type: none;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+}
+.header-li a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+/* MAIN IMG */
+.principal-main{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,80%), rgba(0,0,0,20%)),url(./Imagens/FotoHotel.jpg);
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+.title-container{
+    text-align: center;
+    margin-bottom: 5em;
+    margin-top: 11em;
+}
+.title-container h1{
+    margin-top: 1.2em;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 3em;
+}
+.title-container span{
+    color: white;
+    font-size: 2em;
+}
+/* reservation div */
+.main-reservations{
+    background-color: black;
+    width: 80%;
+    max-width: 1200px;
+    height: 4.5em;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10em;
+}
+.main-reservations input{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-right: 1px solid rgba(0,0,0,50%);
+}
+.main-reservations a{
+    width: 25%;
+    background-color: #E73434;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-reservations a:hover{
+    background-color: #F16868;
+    color: white;
+}
+/* section comentário */
+.coment-sections{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2em;
+    height: 12em;
+    margin-bottom: 2em;
+}
+.coment-sections h2:nth-child(1){
+    font-family: 'Herr Von Muellerhoff', sans-serif;
+    font-size: 7em;
+    font-weight: 400;
+    color: rgba(255,0,0,35%);
+}
+.coment-sections h2:nth-child(2){
+    transform: translateY(-85px);
+    font-size: 2.4em;
+    color: #820F0F;
+    font-weight: 700;
+    text-align: left;
+}
+.coment-sections span{
+    font-size: 0.8em;
+    line-height: 20px;
+    color: black;
+    margin-bottom: 2em;
+}
+.coment-sections div:nth-child(1){
+    height: 12em;
+    width: 25em;
+}
+.coment-sections div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10em;
+    width: 40%;
+    margin-left: 10%;
+    align-items: center;
+}
+.coment-sections div{
+    max-width: 550px;
+}
+.btm-padrao{
+    font-size: 0.7em;
+    background-color: #cec2ab;
+    border: 1px solid rgba(0,0,0,10%);
+    color: white;
+    padding: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btm-padrao:hover{
+    background-color: #C7B696;
+    transition: 0.5s;
+}
+/* CARDS SECTIONS */
+.cards-sections{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+}
+.divisao01, .divisao02{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 650px;
+}
+.container01, .container02, .container03, .container04{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    height: 650px;
+    width: 50%;
+}
+.allimgs{
+    width: 100%;
+    height: 590px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.5s;
+    box-sizing: content-box;
+}
+.span-title{
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    animation: textup 0.5s ease-out;
+}
+.bar{
+    padding-right: 12px;
+}
+.cards-descricao{
+    color: white;
+    display: none;
+    animation: textdown 0.5s linear;
+    line-height: 1.6em;
+}
+.allimgs i{
+    color: #F7B387;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    padding: none;
+    animation: textup 0.5s ease-out;
+}
+.img01{
+    background-image: linear-gradient(rgba(0,0,0,30%), rgba(0,0,0,30%)),url(./Imagens/bar02.jpg);
+}
+.img02{
+    background-image: linear-gradient(rgba(0,0,0,30%), rgba(0,0,0,30%)),url(./Imagens/fotoAcademia02.jpg.png);
+}
+.img03{
+    background-image: linear-gradient(rgba(0,0,0,30%), rgba(0,0,0,30%)),url(./Imagens/pscina02.jpg);
+}
+.img04{
+    background-image: linear-gradient(rgba(0,0,0,30%), rgba(0,0,0,30%)),url(./Imagens/salaJogos02.jpg.png);
+}
+.container01:hover .img01, .container02:hover .img02, .container03:hover .img03, .container04:hover .img04{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: content-box;
+    transition: 0.5s;
+}
+.container01:hover .img01, .img01:hover{
+    background-image: linear-gradient(rgba(0,0,0,45%), rgba(0,0,0,45%)),url(./Imagens/bar02.jpg);
+    transition: 0.5s;
+}.container02:hover .img02, .img02:hover{
+    background-image: linear-gradient(rgba(0,0,0,55%), rgba(0,0,0,55%)),url(./Imagens/fotoAcademia02.jpg.png);
+    transition: 0.5s;
+}.container03:hover .img03, .img03:hover{
+    background-image: linear-gradient(rgba(0,0,0,55%), rgba(0,0,0,55%)),url(./Imagens/pscina02.jpg);
+    transition: 0.5s;
+}.container04:hover .img04, .img04:hover{
+    background-image: linear-gradient(rgba(0,0,0,55%), rgba(0,0,0,55%)),url(./Imagens/salaJogos02.jpg.png);
+    transition: 0.5s;
+}
+.container01:hover .img01 i, .container01:hover .img01 .span-title, .container02:hover .img02 i, .container02:hover .img02 .span-title, .container03:hover .img03 i,.container03:hover .img03 .span-title,.container04:hover .img04 i, .container04:hover .img04 .span-title{
+    display: none;
+    transition: 0.5s;
+}
+.container01:hover .img01 .cards-descricao, .container02:hover .img02 .cards-descricao, .container03:hover .img03 .cards-descricao, .container04:hover .img04 .cards-descricao{
+    display: flex;
+    margin-left: 40px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+/* RESTAURANT IMG */
+.restaurant-main{
+    height: 40em;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.5;
+    margin-bottom: 1em;
+}
+.content-img-restaurant{
+    background-image: linear-gradient(rgba(0,0,0,55%), rgba(0,0,0,55%)),url(./Imagens/Comida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    height: 38em;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+}
+.content-img-restaurant i{
+    color: #F7B387;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    padding: none;
+    animation: textup 0.5s ease-out;
+}
+.content-img-restaurant .span-title{
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    animation: textup 0.5s ease-out;
+}
+.content-img-restaurant:hover, .restaurant-main:hover .content-img-restaurant{
+    padding-top: 30px;
+    height: 40em;
+    transition: 0.5s;
+    overflow: auto;
+}
+.content-img-restaurant:hover .span-title, .restaurant-main:hover .content-img-restaurant .span-title, .content-img-restaurant:hover i, .restaurant-main:hover .content-img-restaurant i{
+    display: none;
+}
+.content-img-restaurant:hover .cards-descricao, .restaurant-main:hover .content-img-restaurant .cards-descricao{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+/* 3 TEXTS CARDS */
+.cards3-main{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: lightblue;
+    height: 20em;
+}
+h1{
+    font-size: 2em;
+    color: #7C2410;
+}
+.cards-princ{
+    padding: 1em 3em;
+    transition: 0.45s;
+    max-width: 400px;
+}
+.cards-princ i{
+    font-size: 2.6em;
+    color: #7C2410;
+}
+.cards-princ h1{
+    font-size: 2em;
+    color: #7C2410;;
+}
+.card1:hover, .card2:hover, .card3:hover{
+    transform: translateY(-15px);
+    transition: 0.45s;
+    box-shadow: 0 0 1em rgba(0,0,0,25%);
+}
+/* QUARTOS */
+.nossos-quartos{
+    width: 100%;
+    height: 15em;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.back-title{
+    font-family: 'Herr Von Muellerhoff', sans-serif;
+    font-size: 10em;
+    padding-top: 0.5em;
+    font-weight: 400;
+    color: rgba(255,0,0,35%);
+}
+.front-title{
+    transform: translateY(-117px);
+    font-size: 3em;
+    color: #820F0F;
+    font-weight: 700;
+}
+/* carousel */
+.slide-main{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-main{
+    width: 80% !important;
+}
+.mainitem{
+    width: 55vh;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.img-container-slide img{
+    display: block;
+}
+.slide-inside-02{
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0,0,0,30%);
+    border-left: 1px solid rgba(0,0,0,30%);
+    border-right: 1px solid rgba(0,0,0,30%);
+}
+.slide-title{
+    font-size: 1.5em;
+    color: #7C2410;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.font-people i{
+    padding-right: 15px;
+    color: rgba(0,0,0,70%);
+}
+.font-people, .people-slide{
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(0,0,0,70%);
+}
+.room-descrition{
+    font-size: 0.9em;
+    padding-top: 15px;
+    color: rgba(0,0,0,80%);
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 20px;
+}
+.room-mais{
+    padding: 15px 0px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-color: #c19b76 !important;
+    border-radius: 8px;
+    border: 2px solid;
+    color: #c19b76;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.room-mais:hover{
+    background-color: #c19b76;
+    color: white;
+    transition: 0.5s;
+}
+.slide-main .owl-prev{
+    outline: 1px solid rgba(0,0,0,45%) !important;
+    margin: 1px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    width: 30px;
+    height: 30px;
+    color: rgba(0,0,0,70%) !important;
+    margin: 2px !important;
+}
+.slide-main .owl-next{
+    outline: 1px solid rgba(0,0,0,45%) !important;
+    border-radius: none !important;
+    text-transform: uppercase !important;
+    font-weight: 900 !important;
+    color: rgba(0,0,0,70%) !important;
+    width: 30px;
+    height: 30px;
+    margin: 2px !important;
+}
+/* cafe da manha img */
+.breakfast-main{
+    height: 35em;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,30%), rgba(0,0,0,30%)),url(./Imagens/cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 0;
+}
+.cafe-meio{
+    width: 50%;
+    background-color: transparent;
+    background-image: linear-gradient(rgba(0,0,0,45%), rgba(0,0,0,45%));
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.cafe-meio .back-title{
+    font-family: 'Herr Von Muellerhoff', sans-serif;
+    font-size: 10em;
+    padding-top: 0.5em;
+    font-weight: 400;
+    color: rgba(193, 155, 118, 60%);
+}
+.cafe-meio .front-title{
+    transform: translateY(-117px);
+    font-size: 3em;
+    color: white;
+    font-weight: 700;
+}
+.textCafe{
+    color: white;
+    transform: translateY(-55px);
+    line-height: 1.7em;
+    font-weight: 500;
+}
+/* BLOG MAIN */
+.blog-main{
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: lightcyan;
+    line-height: 30px;
+    height: 15em;
+    padding-bottom: 3em;
+}
+.blog-main h3{
+    font-size: 3em;
+    color: #7C2410;
+    font-weight: 700;
+}
+.blog-main p{
+    font-family: 'Herr Von Muellerhoff', sans-serif;
+    font-size: 10em;
+    padding-top: 0.5em;
+    font-weight: 400;
+    color: rgba(193, 155, 118, 40%);
+}
+/* FOTOS */
+.fotos-main{
+    width: 100%;
+    background-color: lightslategrey;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.foto-slide{
+    display: block;
+}
+.imgs{
+    height: 100%;
+    overflow: hidden;
+    max-width: 500px;
+    display: block;
+}
+.imgs img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.6s;
+}
+.imgs:hover img{
+    scale: 1.3;
+    transition: 0.6s;
+}
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 30em;
+    background-color: rgba(118, 44, 36, 72%);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.footer-main{
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(255,255,255,30%);
+}
+.footer-main ul span{
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-main ul li{
+    padding-top: 18px;
+}
+.footer-main ul li i{
+    padding-right: 20px;
+}
+.footer-main ul li i, .footer-main ul li, .footer-main ul li a{
+    color: rgba(255,255,255,60%);
+    text-decoration: none;
+    text-transform: none;
+    font-size: 1em;
+}
+.logo-footer{
+    width: 300px;
+    height: 300px;
+}
+.eulucas{
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+    width: 90%;
+}
+.eu{
+    font-size: 12px;
+    padding-right: 1020px;
+    margin-top: 4em;
+}
+/* KEYFRAMES */
+@keyframes textup{
+    from{
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes textdown{
+    from{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
